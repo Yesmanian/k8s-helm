@@ -1,1 +1,7 @@
-
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8s-edu-goods-configmap
+  namespace: edu-goods
+data:
+  SERVICE_ENDPOINT: "http://k8s-edu-service.edu-user.svc.cluster.local:80"
