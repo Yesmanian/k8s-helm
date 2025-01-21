@@ -34,14 +34,14 @@ spec:
               value: prod                      # 상용(prod) 환경
           livenessProbe:
             httpGet:
-              path: /
-              port: 80
+              path: /api/v1/goods/
+              port: 8080
             initialDelaySeconds: 5
             periodSeconds: 10
           readinessProbe:
             httpGet:
-              path: /
-              port: 80
+              path: /api/v1/goods/
+              port: 8080
             initialDelaySeconds: 5
             periodSeconds: 10
       imagePullSecrets:                        # dockerhub 이미지 pull 위한 secret
