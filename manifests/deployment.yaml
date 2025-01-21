@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: k8s-edu-app
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -37,5 +37,5 @@ spec:
               name: k8s-edu-user-configmap
       imagePullSecrets:                        # dockerhub 이미지 pull 위한 secret
         - name: k8s-edu-dockerhub-secret
-      nodeSelector:                            # pod가 실행 될 node 설정
-        kubernetes.io/hostname: worker01
+      # nodeSelector:                            # pod가 실행 될 node 설정
+      #   kubernetes.io/hostname: worker01
