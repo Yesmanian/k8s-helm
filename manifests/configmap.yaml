@@ -4,4 +4,4 @@ metadata:
   name: k8s-edu-user-configmap
   namespace: edu-user
 data:
-  SERVICE_ENDPOINT: "http://k8s-edu-goods-service.edu-goods.svc.cluster.local:80"
+  SERVICE_ENDPOINT: "http://k8s-edu-goods-service.edu-goods.svc.cluster.local:80/api/v1/goods/"
