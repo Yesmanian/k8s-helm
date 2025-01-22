@@ -34,13 +34,13 @@ spec:
               value: prod                      # 상용(prod) 환경
           livenessProbe:
             httpGet:
-              path: /api/v1/goods/
+              path: /api/v1/goods
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 30
           readinessProbe:
             httpGet:
-              path: /api/v1/goods/
+              path: /api/v1/goods
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 30
