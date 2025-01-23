@@ -35,12 +35,12 @@ spec:
           envFrom:
           - configMapRef:
               name: k8s-edu-user-configmap
-          livenessProbe:
-            httpGet:
-              path: /api/v1/user/
-              port: 8080
-            initialDelaySeconds: 30
-            periodSeconds: 30
+          # livenessProbe:
+          #   httpGet:
+          #     path: /api/v1/user/
+          #     port: 8080
+          #   initialDelaySeconds: 30
+          #   periodSeconds: 30
           # readinessProbe:
           #   httpGet:
           #     path: /api/v1/user/
